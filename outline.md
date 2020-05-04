@@ -16,7 +16,7 @@ General starting point: How much misinformation on the COVID-19 pandemic is bein
 
 Due to the current global pandemic of COVID-19 there has been an obvious spike in information regarding viruses, including their mortality rate, infection mechanisms, number and rate of new cases, and how local, state, national, and global communities and governments have reacted to the pandemic. I am interested in trying to determine how much misinformation is being spread on social media. I have heard the spread of misinformation described as an "infodemic". The misinformation being shared most likely plays a role in the spread of the disease itself. I am looking to pull data from Reddit, which has very well moderated caronavirus subreddits. I'd like to compare comment data pulled from coronavirus related subreddits to see how they compare in terms of number of comments removed by moderators for violations of the subreddit rules. I would also like to determine the reasons for removing these comments.
 ### Overview
-![pdf](https://github.com/degeusgk/Ia626Final/blob/master/Overview_Flowchart.pdf)
+![pdf](https://github.com/degeusgk/IA626-Final-Project/blob/master/Overview_Flowchart.pdf)
 ### Approach
 My approach for this started with an investigation into how to retrieve comment information from Reddit. Thankfully Reddit has a readilly available API; just sign up with an account, register with the site the desire to create a script, app, or bot, and receive API credentials.
 
