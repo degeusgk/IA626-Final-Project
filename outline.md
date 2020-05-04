@@ -37,7 +37,7 @@ In order to start pulling data from Reddit I first needed to decide where to pul
 subreddits = [reddit.subreddit('coronavirus').top('month', limit=25), reddit.subreddit('COVID19').top('month', limit=25)]
 ```
 The ```subreddit()``` function retuns an instance of subreddit requested by name. The ```top()``` function, when provided with a timeframe and post limit, returns a list of posts, or submissions, meeting that specification. The other options for this type of data mining are ```hot()``` or ```new()```.  I presumed that the top posts would give a more indicative sample.
-I selected the top 25 posts from the past month from each subreddit. This covers the month of April and would have given each post time to collect a decent amount of comments. I pulled  posts with as few as a couple hundred comments, to as many as multiple thousands of comments. My estimation was that this was a wide enough range of time and popularity to be a statistically significant sample to analyze.
+I selected the top 25 posts from the past month from each subreddit. This covers the month of April and would have given each post time to collect a decent amount of comments. I pulled  posts with as few as 42 comments, to as many as 5707 comments. My estimation was that this was a wide enough range of time and popularity to be a statistically significant sample to analyze.
 
 I used a nested loop to iterate through first the subreddits in my list, and then the posts (submissions) on each subreddit. 
 ```python
@@ -122,8 +122,14 @@ These data were then output to a .txt file using ```json.dumps()``` for a nicely
  ### Hypothesis: 
  There are more posts removed due to misinformation in the r\COVID-19 subreddit than the r\coronavirus subreddit.
  
+ #### Analysis
+ I graphed the number of removed comments for each of the subreddits over the time period in which they were posted. 
+ 
 ![png](https://github.com/degeusgk/IA626-Final-Project/blob/master/Removed_Comments_Over_Time.png)
+
+
+
+
 ![png](https://github.com/degeusgk/IA626-Final-Project/blob/master/Percent_Removed_Comments_Over_Time.png)
- 
- 
+
  ### Conclusions:
