@@ -132,6 +132,14 @@ When comparing the proportion of removed comments to the whole the difference is
 
 ![png](https://github.com/degeusgk/IA626-Final-Project/blob/master/Percent_Removed_Comments_Over_Time.png)
 
+
+As for the reasons for removing comments, here are the most common and the rate at which they are found:
+* "You should contribute only high-quality information.": 18%
+* "Purely political posts and comments will be removed.": 53%
+* "Incivility isn't allowed on this sub.": 29%
+* "You may not promote the commercial interests of yourself or any business here.": ~0%
+
  ### Conclusions:
 The r\COVID19 has fewer bad actors, and therefore comments removed, than r\coronavirus. I was surprised by this finding. My assumption of the opposite was based on the fact that r\COVID19 is the "scientific sister" subreddit to r\coronavirus. I thought there would be more of an attempt to spread misinformation there. But now I see how it might be harder to provide bad scientific data than to spread more general misinformation, as one would on r\coronavirus. 
-Overall I found this a very interesting conclusion.
+
+Interestingly the most common form of misinformation is political! I would have thought that medical information, like infection and death rate, "cures", and anti-vax information, would have been the most common. I think this means that the push towards reopening the country (or countries) is probably the largest contributor to the spread of the virus in this context rather than medical misinformation.
