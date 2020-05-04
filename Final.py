@@ -97,7 +97,7 @@ for reason in removal_reason_hist:
 
 Output_File.write(json.dumps(removal_reason_hist))
 Output_File.write("\nTotal comments removed: {} \n".format(str(total_removed)))
-Output_File.write(time.time() - start) 
+Output_File.write(str(time.time() - start)) 
 #Close files
 excel_file.close()   
 Output_File.close()
