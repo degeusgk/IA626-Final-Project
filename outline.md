@@ -104,7 +104,7 @@ def traverse_replies(replies_list):
             
     return
 ```
-Once all comments have been traversed, I captured the data for each post in a .csv file. The datetime data needed to be normalized. This attribute is stored in UNIX time and must be translated into something human readable. I chose the following format. 
+Once all comments have been traversed, I captured the data for each post in a .csv file. This would allow me to easilly graph the data against eachother and over time. The datetime data needed to be normalized. This attribute is stored in UNIX time and must be translated into something human readable. I chose the following format. In addition I calculated the percentage of removed comments based on the number I counted verses the total comments reported for that post.
 ```python
         #Normalize percentage and date/time data
         removed_count_percent = round((removed_count/submission.num_comments)*100,2)
@@ -123,13 +123,15 @@ These data were then output to a .txt file using ```json.dumps()``` for a nicely
  There are more posts removed due to misinformation in the r\COVID-19 subreddit than the r\coronavirus subreddit.
  
  #### Analysis
- I graphed the number of removed comments for each of the subreddits over the time period in which they were posted. 
+ I graphed the number of removed comments for each of the subreddits over the time period in which they were posted. It quickly became obvious that r\COVID19 consistently has significantly fewer removed comments than r\coronavirus.
  
 ![png](https://github.com/degeusgk/IA626-Final-Project/blob/master/Removed_Comments_Over_Time.png)
 
-
+When comparing the proportion of removed comments to the whole the difference is equally as stark. Not only does r\coronavirus have more removed comments, it has a higher percentage of comments that are removed. This is despite the fact that for every moderator removed comment there is an additional comment explaining why.
 
 
 ![png](https://github.com/degeusgk/IA626-Final-Project/blob/master/Percent_Removed_Comments_Over_Time.png)
 
  ### Conclusions:
+The r\COVID19 has fewer bad actors, and therefore comments removed, than r\coronavirus. I was surprised by this finding. My assumption of the opposite was based on the fact that r\COVID19 is the "scientific sister" subreddit to r\coronavirus. I thought there would be more of an attempt to spread misinformation there. But now I see how it might be harder to provide bad scientific data than to spread more general misinformation, as one would on r\coronavirus. 
+Overall I found this a very interesting conclusion.
